@@ -1,0 +1,377 @@
+  html{
+    overflow-x: hidden;
+    clear: both;
+  }
+
+  /*header*/
+
+  /*top header*/
+  header{
+    /* height: 100vh; */ 
+    /* border-top: 4px solid #00a5df;
+   */
+   overflow: auto;
+ }
+  header #nav{
+    width: 100%;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;  
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 300;
+    border-radius: 0;
+    transition: all .7s ease-in-out;
+  }
+  header #nav.fixed{  
+    background: #fff;
+    box-shadow: 0px 2px 3px #888;
+    border-radius: 0; 
+    padding: 12px;
+  }
+  header #nav.fixed #myNavbar ul li a{
+    line-height: 60px;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'open_sanslight'; 
+  }
+  header #nav.fixed #myNavbar ul .border-radius a{
+    line-height: 30px;
+  }
+  header #nav .navbar-header a{
+    font-family: 'montserratblack';
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 250%;
+    letter-spacing: 5px;
+  }
+  .navbar-default{
+    border: none;
+    border-top: 3px solid #75af00;
+
+  }
+  header #nav #myNavbar{
+    overflow: hidden;
+  }
+  header #nav #myNavbar ul{
+    list-style-type: none;
+    text-align: right;
+    float: right; 
+  }
+  header #nav #myNavbar ul li{
+    display: inline-block;
+    height: 100%;
+    padding: 0px 0px;
+    overflow: hidden;
+    position: relative;  
+    transition: all .5s ease-in-out;
+  }
+
+  header #nav #myNavbar ul li:hover a{
+    text-decoration: none;
+    color: #75af00;
+  }
+
+  header #nav #myNavbar ul li a{
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'open_sanslight'; 
+    text-transform: uppercase;
+  }
+  .navbar-nav > li > a {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+
+  header #nav #myNavbar ul .border-radius{
+    width: 100px;
+    margin: 15px 5px;
+    border-radius: 50px;
+    text-align: center;
+  }
+  header #nav #myNavbar ul .border-radius a{
+    background: rgba(117,175,0);
+    line-height: 30px;
+  }
+  header #nav #myNavbar ul .border-radius a:hover{color: rgb(11, 76, 125);}
+  /*nav end*/
+
+  .carousel-inner .item{
+    width: 100%;
+    height: 100vh;  
+  } 
+
+  .carousel-inner .item figure{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  /* .carousel-inner .item .img-custome{
+    width: 100%;
+    height: 100vh;
+  }  */
+  .carousel-inner .item figure .fig-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    /* background: rgba(0, 0, 0, .7); */
+    background: rgba(12, 12, 12, 0.65);
+    top: 0;
+    left: 0;
+  }
+  .carousel-inner .item figure .fig-2{
+    position: absolute;
+    width: 100%;  
+    z-index: 105;  
+    top: 43%;
+    left: 0;
+    display: block;  
+  }
+  .carousel-inner .item figure .fig-2 h2{  
+    font-family: 'Raleway', sans-serif;
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+    opacity: 0;
+  }
+  .carousel-inner .item figure .fig-2 p,
+  .carousel-inner .item figure .fig-2 a{
+     color: #fff;
+     text-align: center;
+  }
+  .carousel-inner .item.active figure .fig-2 h2{  
+    font-family: 'Raleway', sans-serif;
+    transform: scale(1); 
+    opacity: 1; 
+    margin: 0;
+  }
+  .carousel-inner .item.active figure .fig-2 p{
+    text-transform: none;
+    margin: 20px 0;
+  }
+  .carousel-inner .item .c-w{
+    font-size: 52px;
+    font-weight: 600;
+  }
+  .carousel-inner .item .btn-custom{
+    background: transparent;
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 100px;
+  }
+  .carousel-inner .item .btn-custom:hover {color: #000;background: #fff;border: 2px solid #fefefe;}
+
+  /*header section*/
+
+  /* statistics section start */
+
+  .statistics-bg{
+    background: #2c424a;
+    padding-bottom: 30px;
+  }
+  .statistics-bg figure{
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+.statistics-bg figure img{
+  width: 100%;
+  max-width: 115px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.statistics-bg figure figcaption span, .statistics-bg figure figcaption h4{font-size: 18px; color: #fff;} 
+  /* statistics section end */
+
+
+  /*services*/
+ .plan{padding-bottom: 30px;}
+
+.plan .service figure:hover{box-shadow: 0px 0px 3px;}
+.plan .service figure{
+  width: 100%;
+  min-height: 270px;
+  background: #fff;  
+  position: relative;
+  transition: all .5s ease-in-out;
+  margin-bottom: 20px;
+  overflow: hidden;
+  clear: both;
+}
+.plan .service figure .fig-item-1{
+  width: 100px;
+  height: 100px;
+  border: 8px solid #eee;
+  background: none;
+  display: block;
+  text-align: center;
+  line-height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px #888;
+  transition: all .5s ease-in-out;
+}
+.plan .service figure:hover .fig-item-1{  
+  border: 8px solid #fff;
+  background: #2c424a; 
+}
+.plan .service figure .fig-item-1 .fa{
+  font-size: 35px;
+  color: rgba(117,175,0);
+}
+.plan .service figure .fig-item-2{
+  position: absolute;
+  top: 120px;
+  width: 100%;  
+}
+.plan .service figure .fig-item-2 h5{
+  text-align: center;
+  display: block; 
+}
+.plan .service figure .fig-item-2 p{
+  padding: 0px 30px;
+  font-size: 14px;
+}
+.plan .service figure .fig-hover-1{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background: rgba(117,175,0);
+  transition: all .5s ease-in-out;
+}
+.plan .service figure .fig-hover-2{
+  position: absolute;
+  bottom: 50%;
+  left: 0%;
+  width: 2px;
+  height: 0%;
+  background: rgba(117,175,0);
+  transition: all .5s ease-in-out;
+}
+.plan .service figure .fig-hover-3{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 2px;
+  height: 0%;
+  background: rgba(117,175,0);
+  transition: all .5s ease-in-out;
+}
+.plan .service figure .fig-hover-4{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 0%;
+  height: 2px;
+  background: rgba(117,175,0);
+  transition: all .5s ease-in-out;
+}
+
+.plan .service figure:hover .fig-hover-4, .plan .service figure:hover .fig-hover-1{
+  width: 50%
+}
+.plan .service figure:hover .fig-hover-2, .plan .service figure:hover .fig-hover-3{
+  height: 50%
+}
+.plan .service figure p span{
+  width: 50%;
+} 
+.plan .service figure p .left{float: left;}
+.plan .service figure p .right{float: right; text-align: center;}
+/*service*/
+
+
+
+/*about*/
+.about{
+  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #F3F3F3;
+  overflow: hidden;
+  clear: both;
+}
+.about .custom-btn, .signup .custom-btn{
+  background: transparent;
+  background: rgba(117, 175, 1, 0.69);
+  border: none;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+}
+.about .custom-btn:hover, .signup .custom-btn:hover {background: rgba(117,175,0);}
+
+
+/* about end */
+
+/* choose start */
+
+.choose{ padding-bottom: 60px; }
+.choose figure img{ width: 60px; float: left; margin-right: 24px; }
+.choose figure figcaption h5{ font-size: 14px; font-weight: 700; }
+
+/* choose end*/
+  .signup{/*  background: #F3F3F3; */ background: rgba(117, 175, 0, 0.3); padding-bottom: 30px;}
+  .signup .custom-btn{margin: 50px 0; text-transform: uppercase; padding: 8px 16px;}
+
+  /*contact start*/
+
+
+
+/* login */
+.area{
+  margin-top: 80px; 
+  color: #111;
+}
+/* login end */
+
+
+
+
+  footer{
+    background: #333;
+  }
+  footer a{
+    font-family: 'montserratblack';
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 250%;
+    letter-spacing: 5px;
+    display: block;
+  }
+  footer a:hover{
+    color: rgba(117, 175, 1, 0.69);
+  }
+
+  footer ul{
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  footer ul li{
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  footer ul li a{
+    color: #fff;
+    font-size: 14px;
+  }
+
+  footer p a{
+    display: inline;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+  .col-xs-offset-1 {
+      margin-left: 0;
+  }
